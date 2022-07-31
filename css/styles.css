@@ -1,0 +1,243 @@
+:root{
+    --accent-color: #2196F3; /*колір акцентів, частини логотипу, фону кнопок*/
+    --text-color: #757575; /*колір вторинного тексту*/
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #212121;
+    background: #F5F5F5;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.navigation-list,
+.contacts-list,
+.principles-list,
+.tasks-list,
+.team-list,
+.address-list,
+.filter-list,
+.projects-list{
+    list-style: none;
+}
+
+/*--------HEADER---------*/
+
+.header{
+    background: #FFFFFF;
+}
+
+.logo-web-element {
+    color: var(--accent-color);
+}
+
+.logo-studio-element {
+    color: #000000;
+}
+
+.footer-studio-element{
+    color: #FFFFFF;
+}
+
+.logo-web-element, .logo-studio-element, .footer-studio-element {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.navigation-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.link,
+link:visited {
+    text-decoration: none;
+    color: inherit
+}
+
+.navigation-link:hover, .navigation-link:focus, .contact-link:hover, .contact-link:focus {
+    color: var(--accent-color);
+}
+
+.contact-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+
+/*---------HERO--------*/
+.hero{
+    background: #2F303A;
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.hero-btn {
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-width: 0px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/*---------PRINCIPLES-------------*/
+.work-principles, .tasks{
+    background: #F5F5F5;
+}
+
+.principles-title{
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.principles-after-title{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+
+/*-------tasks-----------*/
+.tasks-title, .team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/*--------team--------------*/
+.team{
+    background: #F5F4FA;
+}
+.member-name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.member-title{
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+
+/*-----------footer------------*/
+.footer{
+    background: #2F303A;
+}
+
+.map-link{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.mail-link, .tel-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/*---------------PORTFOLIO------------*/
+/*---------------FILTER BUTTONS-------*/
+.filter-btns{
+    background: #F5F5F5;
+}
+
+.filter-btn{
+    background: #F5F4FA;
+    border-radius: 4px;
+    border-width: 0px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    cursor: pointer;
+}
+
+.filter-btn:hover, .filter-btn:focus{
+    background: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+/*--------projects-------------------*/
+
+.project-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.project-title-after{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
