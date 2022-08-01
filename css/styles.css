@@ -9,6 +9,30 @@ body {
     background: #F5F5F5;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -35,10 +59,6 @@ body {
 
 /*--------HEADER---------*/
 
-.header{
-    background: #FFFFFF;
-}
-
 .logo-web-element {
     color: var(--accent-color);
 }
@@ -60,6 +80,37 @@ body {
     letter-spacing: 0.03em;
 }
 
+.link-logo {
+    margin-right: 93px;
+}
+
+.header{
+    background: #FFFFFF;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.wrap-header-navigation {
+    display: flex;
+}
+
+.navigation-list {
+    display: flex;
+}
+
+.navigation-list-item {
+    padding-right: 50px;
+}
+
+.navigation-list-item:last-child {
+    padding-right: 0px;
+}
+
 .navigation-link {
     font-family: 'Roboto';
     font-style: normal;
@@ -68,6 +119,8 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+
+
 
 .link,
 link:visited {
@@ -79,6 +132,12 @@ link:visited {
     color: var(--accent-color);
 }
 
+.contacts-list {
+    display: flex;
+    align-items: center;
+    margin-left: 340px;
+}
+
 .contact-item {
     font-weight: 500;
     font-size: 14px;
@@ -87,12 +146,24 @@ link:visited {
     color: var(--text-color);
 }
 
+.contact-item:first-child {
+    margin-right: 50px;
+}
+
 /*---------HERO--------*/
 .hero{
     background: #2F303A;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+    outline: 2px solid rgb(10, 184, 210);
 }
 
+
 .hero-title {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -103,6 +174,9 @@ link:visited {
 }
 
 .hero-btn {
+    min-width: 216px;
+    padding: 10px 32px 10px 32px;
+    margin: 30px auto 0px;
     background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -111,8 +185,7 @@ link:visited {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
+    display: block;
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
@@ -122,6 +195,8 @@ link:visited {
 /*---------PRINCIPLES-------------*/
 .work-principles, .tasks{
     background: #F5F5F5;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .principles-title{
@@ -138,6 +213,19 @@ link:visited {
     color: var(--text-color);
 }
 
+.principles-list {
+    display: flex;
+}
+
+.principles-list-item {
+    max-width: 270px;
+    margin-right: 30px;
+}
+
+.principles-list-item:last-child {
+    margin-right: 0px;
+}
+
 /*-------tasks-----------*/
 .tasks-title, .team-title {
     font-weight: 700;
@@ -147,11 +235,36 @@ link:visited {
     letter-spacing: 0.03em;
 }
 
+.tasks-title {
+    padding-bottom: 50px;
+}
+
+.tasks-list {
+    display: flex;
+}
+
+.tasks-list-item {
+    margin-right: 30px;
+}
+
+.tasks-list-item:last-child {
+    margin-right: 0px;
+}
+
 /*--------team--------------*/
 .team{
     background: #F5F4FA;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.team-title {
+    padding-top: 94px;
+    padding-bottom: 50px;
 }
 .member-name{
+    padding-top: 30px;
+    padding-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -160,6 +273,7 @@ link:visited {
 }
 
 .member-title{
+    padding-bottom: 30px;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -167,9 +281,26 @@ link:visited {
     color: var(--text-color);
 }
 
+.team-list {
+    display: flex;
+}
+
+.team-list-item {
+    margin-right: 30px;
+}
+
+.team-list-item:last-child {
+    margin-right: 0px;
+}
+
 /*-----------footer------------*/
+.footer-address {
+    margin-top: 20px;
+}
 .footer{
     background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .map-link{
@@ -179,6 +310,12 @@ link:visited {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+}
+
+.mail-link {
+    display: inline-block;
+    margin-top: 9px;
+    margin-bottom: 9px;
 }
 
 .mail-link, .tel-link {
@@ -194,6 +331,8 @@ link:visited {
 /*---------------FILTER BUTTONS-------*/
 .filter-btns{
     background: #F5F5F5;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .filter-btn{
@@ -225,6 +364,19 @@ link:visited {
     color: #FFFFFF;
 }
 
+.filter-list {
+    display: flex;
+    justify-content: center;
+}
+
+.filter-list-btn {
+    margin-right: 8px;
+}
+
+.filter-list-btn:last-child {
+    margin-right: 0px;
+}
+
 /*--------projects-------------------*/
 
 .project-title{
@@ -240,4 +392,29 @@ link:visited {
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--text-color);
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.projects-list-item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 360px;
+    height: 404px;
+    border: 1px solid #eeeeee;
+}
+
+.project-box {
+    padding: 20px 24px;
+    border: 1px solid #eeeeee;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
