@@ -6,7 +6,6 @@
 body {
     font-family: "Roboto", sans-serif;
     color: #212121;
-    background: #F5F5F5;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -88,6 +87,7 @@ address {
     background: #FFFFFF;
     padding-top: 24px;
     padding-bottom: 25px;
+    border-bottom: 1px solid #ececec;
 }
 
 .navigation {
@@ -156,7 +156,6 @@ link:visited {
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
-    outline: 2px solid rgb(10, 184, 210);
 }
 
 
@@ -196,7 +195,6 @@ link:visited {
 .work-principles, .tasks{
     background: #F5F5F5;
     padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .principles-title{
@@ -204,6 +202,7 @@ link:visited {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .principles-after-title{
@@ -236,7 +235,7 @@ link:visited {
 }
 
 .tasks-title {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .tasks-list {
@@ -260,7 +259,7 @@ link:visited {
 
 .team-title {
     padding-top: 94px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 .member-name{
     padding-top: 30px;
@@ -312,12 +311,6 @@ link:visited {
     color: #FFFFFF;
 }
 
-.mail-link {
-    display: inline-block;
-    margin-top: 9px;
-    margin-bottom: 9px;
-}
-
 .mail-link, .tel-link {
     font-style: normal;
     font-weight: 400;
@@ -327,15 +320,19 @@ link:visited {
     color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-list-item {
+    margin-bottom: 9px;
+}
+
 /*---------------PORTFOLIO------------*/
 /*---------------FILTER BUTTONS-------*/
 .filter-btns{
-    background: #F5F5F5;
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
 .filter-btn{
+    padding: 6px 22px;
     background: #F5F4FA;
     border-radius: 4px;
     border-width: 0px;
@@ -398,12 +395,11 @@ link:visited {
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
+    gap: 30px;
 }
 
 .projects-list-item {
-    margin-right: 30px;
-    margin-bottom: 30px;
-    width: 360px;
+    width: 370px;
     height: 404px;
     border: 1px solid #eeeeee;
 }
