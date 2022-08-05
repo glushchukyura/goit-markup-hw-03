@@ -104,11 +104,11 @@ address {
 }
 
 .navigation-list-item {
-    padding-right: 50px;
+    margin-right: 50px;
 }
 
 .navigation-list-item:last-child {
-    padding-right: 0px;
+    margin-right: 0px;
 }
 
 .navigation-link {
@@ -226,6 +226,10 @@ link:visited {
 }
 
 /*-------tasks-----------*/
+.tasks {
+    padding-bottom: 94px;
+}
+
 .tasks-title, .team-title {
     font-weight: 700;
     font-size: 36px;
@@ -258,12 +262,10 @@ link:visited {
 }
 
 .team-title {
-    padding-top: 94px;
     margin-bottom: 50px;
 }
 .member-name{
-    padding-top: 30px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -272,7 +274,6 @@ link:visited {
 }
 
 .member-title{
-    padding-bottom: 30px;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -290,6 +291,11 @@ link:visited {
 
 .team-list-item:last-child {
     margin-right: 0px;
+}
+
+.team-list-box {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /*-----------footer------------*/
